@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de servicios de capacitación y concienciación.">
+    <title>Servicios | ConcientizaTeam</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta name="theme-color" content="#102e38">
+  </head>
+  <body class="pagina-servicios">
+    <a class="saltar-contenido" href="#contenido-principal">Saltar al contenido</a>
+    <!-- ========== ENCABEZADO (igual en todas las páginas) ========== -->
+    <header class="sitio-encabezado" id="encabezado-sitio">
+      <div class="contenedor">
+        <a class="sitio-marca" href="index.html" id="marca-sitio">
+          <img src="img/logo-respaldo.svg" alt="ConcientizaTeam" width="44" height="44" data-original-src="img/logo.png" decoding="async">
+          <span>ConcientizaTeam</span>
+        </a>
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+        <nav id="menu-principal" class="sitio-menu" aria-label="Menú principal">
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <a href="servicios.html" aria-current="page">Servicios</a>
+            </li>
+            <li>
+              <a href="contacto.html">Contacto</a>
+            </li>
+            <li>
+              <a class="sitio-menu-login" href="login.html">Ingresar</a>
+            </li>
+            <li>
+              <a class="sitio-menu-registro" href="registro.html">Crear cuenta</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="contenido-principal">
+      <section class="titulo-pagina" id="cabecera-pagina">
+        <div class="contenedor">
+          <p class="etiqueta">ConcientizaTeam / Servicios</p>
+          <h1>Aprender hoy. Prevenir mañana.</h1>
+          <p>Despliega "Ver detalles" para conocer qué incluye cada capacitación.</p>
+        </div>
+      </section>
+      <!-- ========== CATÁLOGO ========== -->
+      <section class="seccion" id="catalogo">
+        <div class="contenedor">
+          <div class="seccion-titulo">
+            <h2>Cuatro áreas, un mismo objetivo</h2>
+            <p>Cada servicio combina explicación y práctica para que el equipo aplique lo aprendido en su trabajo diario. Las duraciones son sugeridas.</p>
+          </div>
+          <div class="servicios-catalogo">
+            <article class="tarjeta" id="servicio-seguridad">
+              <img src="img/seguridad.svg" alt="Ilustración de prevención y seguridad" data-original-src="img/capa.png" decoding="async" width="640" height="480" loading="lazy">
+              <div class="tarjeta-cuerpo">
+                <p class="etiqueta">Área 01 · 6 horas sugeridas</p>
+                <h3>Capacitación en seguridad</h3>
+                <p>Formación práctica para prevenir accidentes y actuar correctamente ante emergencias.</p>
+                <details>
+                  <summary>Ver detalles</summary>
+                  <p>Incluye: identificación de riesgos, uso de equipos de protección y simulacros. Duración sugerida: 6 horas.</p>
+                  <p>
+                    <strong>Objetivo de aprendizaje:</strong> Reconocer situaciones inseguras y comprender las medidas de prevención.</p>
+                </details>
+                <a class="boton boton-pequeno" href="contacto.html?servicio=seguridad">Consultar esta capacitación</a>
+              </div>
+            </article>
+            <article class="tarjeta" id="servicio-riesgos">
+              <img src="img/riesgos.svg" alt="Ilustración de identificación de riesgos" data-original-src="img/concienciacion.png" decoding="async" width="640" height="480" loading="lazy">
+              <div class="tarjeta-cuerpo">
+                <p class="etiqueta">Área 02 · 3 horas sugeridas</p>
+                <h3>Concienciación sobre riesgos</h3>
+                <p>Charlas para que el personal reconozca los riesgos de su trabajo diario y sepa cómo evitarlos.</p>
+                <details>
+                  <summary>Ver detalles</summary>
+                  <p>Incluye: análisis de casos reales, señales de alerta y cómo reportar incidentes. Duración sugerida: 3 horas.</p>
+                  <p>
+                    <strong>Objetivo de aprendizaje:</strong> Identificar señales de alerta y comunicar incidentes con claridad.</p>
+                </details>
+                <a class="boton boton-pequeno" href="contacto.html?servicio=riesgos">Consultar esta capacitación</a>
+              </div>
+            </article>
+            <article class="tarjeta" id="servicio-buenas-practicas">
+              <img src="img/equipo.svg" alt="Ilustración de colaboración laboral" data-original-src="img/buenas.png" decoding="async" width="640" height="480" loading="lazy">
+              <div class="tarjeta-cuerpo">
+                <p class="etiqueta">Área 03 · 4 horas sugeridas</p>
+                <h3>Buenas prácticas laborales</h3>
+                <p>Hábitos de trabajo, ética y comunicación para un mejor ambiente laboral.</p>
+                <details>
+                  <summary>Ver detalles</summary>
+                  <p>Incluye: código de conducta, trabajo en equipo y manejo de conflictos. Duración sugerida: 4 horas.</p>
+                  <p>
+                    <strong>Objetivo de aprendizaje:</strong> Mejorar la colaboración y resolver desacuerdos con respeto.</p>
+                </details>
+                <a class="boton boton-pequeno" href="contacto.html?servicio=buenas-practicas">Consultar esta capacitación</a>
+              </div>
+            </article>
+            <article class="tarjeta" id="servicio-informatica">
+              <img src="img/digital.svg" alt="Ilustración de protección digital" data-original-src="img/seguinfor.png" decoding="async" width="640" height="480" loading="lazy">
+              <div class="tarjeta-cuerpo">
+                <p class="etiqueta">Área 04 · 4 horas sugeridas</p>
+                <h3>Seguridad informática básica</h3>
+                <p>Cuidado de contraseñas, correos y datos de la empresa.</p>
+                <details>
+                  <summary>Ver detalles</summary>
+                  <p>Incluye: contraseñas seguras, reconocimiento de correos falsos (phishing) y protección de datos. Duración sugerida: 4 horas.</p>
+                  <p>
+                    <strong>Objetivo de aprendizaje:</strong> Detectar correos sospechosos y cuidar credenciales e información.</p>
+                </details>
+                <a class="boton boton-pequeno" href="contacto.html?servicio=informatica">Consultar esta capacitación</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="seccion seccion-suave" id="llamada-accion">
+        <div class="contenedor banda-cta">
+          <div>
+            <h2>¿Listo para capacitar a tu equipo?</h2>
+            <p>Cuéntanos qué necesita tu organización y te orientaremos sobre el servicio más adecuado.</p>
+          </div>
+          <div class="hero-acciones">
+            <a class="boton" href="contacto.html">Escríbenos</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ========== PIE DE PÁGINA (igual en todas las páginas) ========== -->
+    <footer class="sitio-pie" id="pie-sitio">
+      <div class="contenedor sitio-pie-columnas">
+        <div id="pie-institucion">
+          <a href="index.html" class="pie-marca">
+            <img src="img/logo-respaldo.svg" data-original-src="img/logo.png" width="44" height="44" alt="">ConcientizaTeam</a>
+          <p>Capacitación y concienciación para el personal de las organizaciones.</p>
+        </div>
+        <div id="pie-navegacion">
+          <h3>Navegación</h3>
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <a href="servicios.html">Servicios</a>
+            </li>
+            <li>
+              <a href="contacto.html">Contacto</a>
+            </li>
+            <li>
+              <a href="login.html">Ingresar</a>
+            </li>
+            <li>
+              <a href="registro.html">Crear cuenta</a>
+            </li>
+          </ul>
+        </div>
+        <div id="pie-servicios">
+          <h3>Formación</h3>
+          <ul>
+            <li>
+              <a href="servicios.html#servicio-seguridad">Seguridad laboral</a>
+            </li>
+            <li>
+              <a href="servicios.html#servicio-riesgos">Prevención de riesgos</a>
+            </li>
+            <li>
+              <a href="servicios.html#servicio-buenas-practicas">Buenas prácticas</a>
+            </li>
+            <li>
+              <a href="servicios.html#servicio-informatica">Seguridad digital</a>
+            </li>
+          </ul>
+        </div>
+        <div id="pie-contacto">
+          <h3>Contacto</h3>
+          <p>
+            <a href="mailto:contacto@concientizateam.com">contacto@concientizateam.com</a>
+          </p>
+          <p>Lima, Perú</p>
+          <p>Lunes a viernes, 9:00 a. m. a 6:00 p. m.</p>
+        </div>
+      </div>
+      <div class="sitio-pie-copyright" id="pie-copyright">
+        <p>© 2026 ConcientizaTeam. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
