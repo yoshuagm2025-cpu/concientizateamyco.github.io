@@ -6,6 +6,10 @@
     <meta name="description" content="Escríbenos para solicitar información sobre nuestros servicios.">
     <title>Contacto | ConcientizaTeam</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Supabase: conserva la secuencia de carga de estos archivos. -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="supabase-config.js" defer></script>
+    <script src="supabase-app.js" defer></script>
     <script src="script.js" defer></script>
     <meta name="theme-color" content="#102e38">
   </head>
@@ -73,10 +77,10 @@
                 <label for="mensaje">Mensaje</label>
                 <textarea id="mensaje" name="mensaje" rows="5" placeholder="Describe el motivo de tu consulta" required minlength="10" maxlength="3000"></textarea>
               </div>
-              <button type="submit" disabled>Preparar correo</button>
-              <p class="aviso" id="aviso-formulario">Este formulario prepara un correo en tu aplicación de email. El mensaje solo se envía cuando tú confirmas el envío allí.</p>
+              <button type="submit">Enviar mensaje</button>
+              <p class="aviso" id="aviso-formulario">Tu consulta se guardará en nuestra base de datos para que el equipo pueda revisarla.</p>
               <noscript>
-                <p class="aviso">Activa JavaScript para validar este formulario. No se enviarán datos desde esta página.</p>
+                <p class="aviso">Activa JavaScript para poder enviar la consulta.</p>
               </noscript>
               <div class="mensaje-form" role="status" aria-live="polite" hidden></div>
             </form>

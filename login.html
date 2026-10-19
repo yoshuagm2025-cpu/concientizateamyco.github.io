@@ -6,6 +6,10 @@
     <meta name="description" content="Accede a tu cuenta de ConcientizaTeam.">
     <title>Iniciar sesión | ConcientizaTeam</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Supabase: conserva la secuencia de carga de estos archivos. -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="supabase-config.js" defer></script>
+    <script src="supabase-app.js" defer></script>
     <script src="script.js" defer></script>
     <meta name="theme-color" content="#102e38">
   </head>
@@ -48,7 +52,7 @@
         <div class="contenedor">
           <p class="etiqueta">ConcientizaTeam / Acceso</p>
           <h1>Iniciar sesión</h1>
-          <p>Revisa tus datos de acceso. El inicio de sesión aún no está habilitado.</p>
+          <p>Accede a tu cuenta con tu correo electrónico y contraseña.</p>
         </div>
       </section>
       <section class="seccion" id="acceso">
@@ -63,7 +67,7 @@
           </aside>
           <div class="panel panel-login" id="panel-acceso">
             <form class="formulario" id="form-login" action="#" method="post" aria-describedby="aviso-formulario">
-              <p id="aviso-formulario" class="aviso">El acceso aún no está disponible. Puedes validar el formato de tus datos, pero esta página no inicia sesión.</p>
+              <p id="aviso-formulario" class="aviso">Ingresa con las credenciales que utilizaste para registrarte.</p>
               <div class="formulario-campo">
                 <label for="login-correo">Correo electrónico</label>
                 <input type="email" id="login-correo" name="correo" autocomplete="email" placeholder="Introduce tu correo electrónico" required maxlength="254">
@@ -72,13 +76,13 @@
                 <label for="login-clave">Contraseña</label>
                 <input type="password" id="login-clave" name="clave" autocomplete="current-password" placeholder="Introduce tu contraseña" required maxlength="128">
               </div>
-              <button type="submit" disabled>Validar datos de acceso</button>
+              <button type="submit">Iniciar sesión</button>
               <p class="formulario-ayuda">
                 <a href="contacto.html">Consultar sobre el acceso</a>
               </p>
               <p class="formulario-ayuda">¿Aún no tienes cuenta? <a href="registro.html">Regístrate</a>.</p>
               <noscript>
-                <p class="aviso">Activa JavaScript para validar este formulario. No se enviarán datos desde esta página.</p>
+                <p class="aviso">Activa JavaScript para poder iniciar sesión de forma segura.</p>
               </noscript>
               <div class="mensaje-form" role="status" aria-live="polite" hidden></div>
             </form>

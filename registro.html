@@ -6,6 +6,10 @@
     <meta name="description" content="Crea tu cuenta de ConcientizaTeam.">
     <title>Crear cuenta | ConcientizaTeam</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Supabase: conserva la secuencia de carga de estos archivos. -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="supabase-config.js" defer></script>
+    <script src="supabase-app.js" defer></script>
     <script src="script.js" defer></script>
     <meta name="theme-color" content="#102e38">
   </head>
@@ -48,7 +52,7 @@
         <div class="contenedor">
           <p class="etiqueta">ConcientizaTeam / Registro</p>
           <h1>Crear cuenta</h1>
-          <p>Revisa tus datos de registro. La creación de cuentas aún no está habilitada.</p>
+          <p>Regístrate para acceder a las capacitaciones y recursos de ConcientizaTeam.</p>
         </div>
       </section>
       <section class="seccion" id="registro">
@@ -63,7 +67,7 @@
           </aside>
           <div class="panel panel-login" id="panel-registro">
             <form class="formulario" id="form-registro" action="#" method="post" aria-describedby="aviso-formulario">
-              <p id="aviso-formulario" class="aviso">El registro aún no está disponible. Puedes validar tus datos, pero esta página no crea cuentas ni guarda contraseñas.</p>
+              <p id="aviso-formulario" class="aviso">Completa tus datos para crear tu cuenta. Si está activada la confirmación por correo, recibirás un enlace de verificación.</p>
               <div class="formulario-campo">
                 <label for="reg-nombre">Nombre completo</label>
                 <input type="text" id="reg-nombre" name="nombre" autocomplete="name" placeholder="Escribe tu nombre completo" required minlength="3" maxlength="120">
@@ -81,10 +85,10 @@
                 <label for="reg-clave2">Confirmar contraseña</label>
                 <input type="password" id="reg-clave2" name="clave2" autocomplete="new-password" placeholder="Repite tu contraseña" required maxlength="128">
               </div>
-              <button type="submit" disabled>Validar registro</button>
+              <button type="submit">Crear cuenta</button>
               <p class="formulario-ayuda">¿Ya tienes cuenta? <a href="login.html">Ingresar</a>.</p>
               <noscript>
-                <p class="aviso">Activa JavaScript para validar este formulario. No se enviarán datos desde esta página.</p>
+                <p class="aviso">Activa JavaScript para poder crear tu cuenta de forma segura.</p>
               </noscript>
               <div class="mensaje-form" role="status" aria-live="polite" hidden></div>
             </form>
